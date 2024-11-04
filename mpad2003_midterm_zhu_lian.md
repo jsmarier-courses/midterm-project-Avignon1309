@@ -25,7 +25,7 @@ This assignment will be organized into three sections: data collection, data cle
 
 ##### To begin analyzing the dataset, I first imported it into Google Sheets, which is very helpful for clearing the format. I followed these steps to import the data:
 1.	Find Google Sheets and go to File > Import.
-![](ss1,file_to_import.png)
+![](.png)
 2.	Select Upload and find the CSV file extracted from Open Ottawa.
 ![](ss2,import_file.png)<br>
 3.	Choose Replace spreadsheet to upload it as a new sheet, ensuring the data begins in cell A1, otherwise the format will be interrupted.
