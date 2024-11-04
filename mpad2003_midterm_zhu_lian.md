@@ -25,13 +25,13 @@ This assignment will be organized into three sections: data collection, data cle
 
 ##### To begin analyzing the dataset, I first imported it into Google Sheets, which is very helpful for clearing the format. I followed these steps to import the data:
 1.	Find Google Sheets and go to File > Import.
-![](.png)
+![](ss1_file_to_import.png)
 2.	Select Upload and find the CSV file extracted from Open Ottawa.
-![](ss2,import_file.png)<br>
+![](ss2_import_file.png)<br>
 3.	Choose Replace spreadsheet to upload it as a new sheet, ensuring the data begins in cell A1, otherwise the format will be interrupted.
-![](ss3,replace_spread_sheet.png)<br>
+![](ss3_replace_spread_sheet.png)<br>
 ##### After importing, the dataset would be like this:
-![](ss4,dataset_ap.png)<br>
+![](ss4_dataset_ap.png)<br>
 The public link to this Google Sheets spreadsheet is here: 
 https://docs.google.com/spreadsheets/d/1y2qkFr-wPx4Yjkibjxr8ryp7oQOLCHhHAUmfwWnDwZ8/edit?usp=sharing
 
@@ -48,25 +48,6 @@ o	Observation: A few dates are represented as “\N” as missing data, raising 
 ##### Questions on the data
 Looking at the data, one question that comes to my mind is: In the same type request, are there any correlations between one specific request’s description and its status for being resolved or cancelled? For example, for requests of Roads and Transportation, requests with a description of “road maintenance” are mostly tagged with “resolved”, yet most “active” tags have a description of “Traffic Management”. This could reveal how different factors impact city services.
 
-
-
-Use two hashtag symbols (`##`) to create a level 2 heading like this one.
-
-To include a screen capture, use the sample code below. Your images should be saved in the same folder as your `.md` file.
-
-![](import-screen-capture.png)<br>
-*Figure 1: The "Import file" prompt on Google Sheets.*
-
-**Here are examples of functions and lines of code put in grey boxes:**
-
-1. If you name a function, put it between "angled" quotation marks like this: `IMPORTHTML`.
-1. If you want to include the entire line of code, do the same thing, albeit with your entire code: `=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)`.
-1. Alternatively, you can put your code in an independent box using the template below:
-
-``` r
-=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)
-```
-This also shows how to create an ordered list. Simply put `1.` before each item.
 
 ## 3. Understanding Data
 
