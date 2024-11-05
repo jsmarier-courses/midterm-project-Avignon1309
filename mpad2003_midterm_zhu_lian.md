@@ -76,6 +76,8 @@ In a nutshell, 97.8% of the data in column D are correct and accurate, which are
 
 ### 3.2. Cleaning Data
 
+##### In order to make the dataset look more direct, I plan to use three methods to do the clear-up: "Addng a filter", "Removing Duplicate" and "Freezing rows and columns".
+
 ##### First, I use “adding a filter” to reformat the data by their first letter so that requests of the same type will be put together and they will be sorted with the same description, which is much more direct than before.
 
 ![](clear_up_2.png)<br>
@@ -84,13 +86,17 @@ After adding the filter, now I need to "sort A to Z". (Noted, when adding the fi
 
 ![](clear_up_4.png)<br>
 
-Before adding the filter, the dataset was like:
-
-![](clear_up_1.png)<br>
-
 After adding the filter, the dataset is like:
 
 ![](clear_up_3.png)<br>
+
+Also, since what I'm going to look at is the "Roads and Transportation" type, so I need to change the sorting filter in column C from "A to Z" into "filter by condition - Text contains XXX". 
+
+![](clear_up_10.png)<br>
+
+So, when it's filtered as "text contains 'Roads and Transportation'", the dataset will be like:
+
+![](clear_up_11.png)<br>
 
 ##### To make sure there’s no duplicate than can interrupt the analysis, I need to use Google Sheets data-cleaning tools to remove possible duplicates.
 
@@ -110,7 +116,27 @@ Also, as there’s no duplicate, the dataset will not change at all.
 
 ![](clear_up_still.png)<br>
 
+##### After doing all the process above, now the dataset looks very extended at the same level with the same type values. To locate the type and the description we need, "freezing rows and columns" is a great way to freeze those important cells we need while scrolling the scren.
 
+Thus, I need to go to the top left and choose "view", "freeze" first. 
+
+![](clear_up_7.png)<br>
+
+Since I'm going to compare the status and the description, all I need to do is to freeze column B.
+
+![](clear_up_8.png)<br>
+
+Now, I can move freely to compare the status and the description while column B is frozen.
+
+![](clear_up_9.png)<br>
+
+##### In the end, after using “adding the filter”, “remove duplicate” and “freezing rows and columns”, my dataset looks like this:
+
+![](clear_up_12.png)<br>
+
+Before applying the three methods, the dataset was like:
+
+![](clear_up_original.png)<br>
 
 
 ### 3.3. Exploratory Data Analysis (EDA)
