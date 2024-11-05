@@ -141,26 +141,58 @@ Before applying the three methods, the dataset was like:
 
 ### 3.3. Exploratory Data Analysis (EDA)
 
-Insert text here.
+##### Now that the dataset is reformatted, I can use a pivot table to uncover trends, patterns, and outliers.
 
-**This section should include a screen capture of your pivot table, like so:**
+However, while creating a pivot table specifically in type Roads and Transportation, I need to adjust a few things first. Before creating the pivot table, the filter must be selected as “Text Contains”. 
 
-![](pivot-table-screen-capture.png)<br>
-*Figure 2: This pivot table shows...*
+![](table_1.png)<br>
 
-**This section should also include a screen capture of your exploratory chart, like so:**
+After that, at the pivot table settings, the filter should be selected as “Roads and Transportation”, and two rows of “status” and “description” should be activated. To sum up, the pivot table would be like this:
 
-![](chart-screen-capture.png)<br>
-*Figure 3: This exploratory chart shows...*
+![](table2.png)<br>
+
+![](table3.png)<br>
+
+##### After creating one pivot table, it’s time to have a bar chart using the Google Sheets Chart tool to visually represent the spread of values in description.
+
+Thus, I decide to use donut charts to show the percentage more directly. 
+
+![](table4.png)<br>
+
+##### From the pivot table and the donut charts, I've noticed something interesting.
+
+The reason why I focus on Column D (description) is because it’s directly relevant to the status of being solved or cancelled. Column D likely represents an essential variable like the percentage of Road Maintenance requests in the type of Road and Transportation, which could offer insights into the difficulty in solving different road and transportation requests.
+
+There’s one standout number in the pivot table. I noticed that while all the three statuses (Active, Cancelled and Resolved) have almost all the descriptions, the percentages of the descriptions they have are different. For instance, almost 65% of the Roads and Transportation are requests of road maintenance, and traffic management requests are the fewest. This data suggests that some areas of Roads and Transportation may require more resources compared to others.
+
+After making the charts, I’ve learned that the distribution of different requests in Column D has a correlation with its status. Certain categories like road maintenance show much higher values, hinting that most of the road infrastructure are in a poor situation. This trend could suggest a story about how city resources, especially infrastructures are unevenly spread across Ottawa, possibly tied to specific geographic or economic factors within the city.
+
 
 ## 4. Potential Story
 
-Insert text here.
+A potential story emerging from this dataset centers on the topic of uneven distribution of resources in infrastructure across the city of Ottawa. The data in Column D shows significant variance, with some areas like traffic operations and road management displaying much lower values than others. This could indicate that certain requests of Roads and Maintenance face greater demands or challenges than others, highlighting potential inequalities in resource allocation or service accessibility.
+
+To tell this story fully, I would need more data on the status of roads, as well as details on city funding and service allocation on infrastructures. Thus, it would be a great idea to interview community leaders, or officials who can provide more information about the daily work of Roads and Transportation affairs. They could explain how these different requests may impact residents’ daily lives.
+
+Researching similar issues on infrastructure can provide more valuable insights on this issue of uneven distribution. While it’s not about roads, the gap of funding between Ottawa and Toronto can also represent the same situation of uneven distribution on infrastructure (Skura, 2024). Similar cases like the animal-car collisions can explain more on this unequal distribution on road transportation as each place has their own situation (Graveland, 2024)
+
 
 ## 5. Conclusion
 
-Insert text here.
+This assignment involved all the modules of data analysis we had before, from importing and cleaning the data to performing exploratory analysis and considering potential stories. This process is really interesting to me because data can always inform me something I have no idea before. One of the most challenging aspects during this process was sorting the data in the same category because in column D, there are a plenty of different sub-types that are under the same sub-category like Road Maintenance, which includes different types of requests. Additionally, making meaningful observations from raw data and deciding which values to focus on required careful thought to avoid overlooking important patterns, but it’s worthy to spend time on it.
+
+The most rewarding aspect of this assignment was discovering the potential story that emerged from the data. Identifying trends and considering how to add additional sources and interviews made the data feel more dynamic and relevant to reality concerns in Ottawa. 
+
+As for me, understanding more advanced data-cleaning tools like OpenRefine or function methods could enhance my ability to handle large datasets with greater efficiency. The reason why I didn’t use OpenRefine this time is because I’m not truly an expert in it, which can be improved in the future.
+
+In the end, I actually used all the skills I learned from all the modules before in this assignment, and I really enjoy the feeling of putting what I’ve learned into actual use.
+
+
 
 ## 6. References
 
 Canada Statistics. (2020, September 23). *Data Accuracy and Validation: Methods to ensure the quality of data*. Www.statcan.gc.ca. https://www.statcan.gc.ca/en/wtc/data-literacy/catalogue/892000062020008
+
+Skura, E. (2024, September 15). As transit funding gap between Ottawa and Toronto widens, lobbying revs up. CBC. https://www.cbc.ca/news/canada/ottawa/as-transit-funding-gap-between-ottawa-and-toronto-widens-lobbying-revs-up-1.7323080
+
+Graveland, B. (2024, November 3). “Red patches on the road”: Alberta wildlife corridors reduce animal-car collisions. CBC. https://www.cbc.ca/news/canada/calgary/alberta-crowsnest-pass-wildlife-corridors-1.7372446
